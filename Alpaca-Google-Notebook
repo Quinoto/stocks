@@ -1,0 +1,82 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOsBBaa/mMzWmf/rjPn+B0p",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Quinoto/stocks/blob/master/Alpaca-Google-Notebook\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "G1hiJzZQ4RbG",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "!pip install alpaca-trade-api"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "wNiz1w8H4t6r",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "import alpaca_trade_api as alpaca\n",
+        "\n",
+        "api = alpaca.REST('PKWEHB579VFCRD6I6KFY', '7tTgxiZHdlNlo7HVVNKh3f2QDGIvOjkOini1ZmuT', 'https://paper-api.alpaca.markets')"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "tOQTIuRD5UPE",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "api.get_account()"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "OMKGt1XJ5c7l",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "api.submit_order('AAPL',1,'buy','market','gtc')"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    }
+  ]
+}
